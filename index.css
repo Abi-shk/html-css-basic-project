@@ -19,7 +19,7 @@ header {
 }
 
 /* Menu styles */
-.menu{
+.menu {
     min-width: 45%;
     display: flex;
     align-items: center;
@@ -27,12 +27,13 @@ header {
     font-size: 15px;
     justify-content: center;
 }
-.menu h3{
+
+.menu h3 {
     width: 70%;
 }
 
 /* Hover effect for menu */
-.menu:hover{
+.menu:hover {
     color: #ffffff69;
 }
 
@@ -77,6 +78,7 @@ header nav ul :hover {
 header nav ul li {
     display: flex;
     align-items: center;
+    font-size: larger;
 }
 
 /* Styles for navigation anchor tags */
@@ -84,13 +86,15 @@ header nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    font-size: small;
 }
 
-@media(max-width:1200px){
+
+
+@media(max-width:1200px) {
     header nav ul li a {
         display: none;
     }
+
     header nav ul {
         gap: 50px;
     }
@@ -120,7 +124,7 @@ header nav ul li a {
     position: absolute;
     top: 0;
     left: 0;
-    min-width:  100%;
+    min-width: 100%;
     max-width: 100%;
     height: 800px;
     object-fit: cover;
@@ -128,16 +132,29 @@ header nav ul li a {
 }
 
 /* Content styles */
-.content{
+.content {
     margin-top: 100px;
 }
+
+@media(max-width:900px) {
+    .heading-tag {
+        font-size: 50px;
+    }
+
+    #home {
+        margin: 0;
+        padding: 60px 0;
+    }
+
+}
+
 
 /* Heading styles */
 .hero h3 {
     font-size: 22px;
     font-weight: 400;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-stretch:ultra-expanded;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-stretch: ultra-expanded;
     letter-spacing: 3px;
     margin: 0;
 }
@@ -342,9 +359,10 @@ footer {
 /* Keyframes for blinking animation */
 @keyframes blink {
     0% {
-        transform: translate(0,200px);
+        transform: translate(0, 200px);
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -365,9 +383,10 @@ footer {
 /* Keyframes for second blinking animation */
 @keyframes blink2 {
     0% {
-        transform: translate(-10px, 0 );
+        transform: translate(-10px, 0);
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -375,6 +394,7 @@ footer {
 
 /* Media query for screens with a maximum width of 768px */
 @media screen and (max-width: 768px) {
+
     /* Hide the .lists class */
     .lists {
         display: none;
@@ -400,7 +420,7 @@ footer {
     .hero h1 {
         font-size: 60px;
     }
-    
+
     /* Adjust styles for .content2 */
     .content2 {
         height: auto;
@@ -409,7 +429,7 @@ footer {
         align-items: center;
         margin-top: 200px;
     }
-    
+
     /* Adjust styles for .c1 */
     .c1 {
         width: 80%;
@@ -417,7 +437,7 @@ footer {
         font-size: 25px;
         margin-bottom: 20px;
     }
-    
+
     /* Adjust styles for .c2 */
     .c2 {
         width: 80%;
@@ -425,19 +445,19 @@ footer {
         font-size: 20px;
         line-height: 1.6;
     }
-    
+
     /* Adjust styles for .images */
     .images {
         position: relative;
         height: 200px;
     }
-    
+
     /* Adjust styles for images inside .images */
     .images img {
         width: 100%;
         height: 100%;
     }
-    
+
     /* Adjust styles for .imageTitle */
     .imageTitle {
         position: absolute;
@@ -446,17 +466,17 @@ footer {
         bottom: 10px;
         text-align: center;
     }
-    
+
     /* Adjust font size for .imageTitle h1 */
     .imageTitle h1 {
         font-size: 30px;
     }
-    
+
     /* Adjust font size for .imageTitle h3 */
     .imageTitle h3 {
         font-size: 20px;
     }
-    
+
     /* Adjust font size for .imageTitle span */
     .imageTitle span {
         font-size: 15px;
@@ -465,12 +485,12 @@ footer {
         align-items: center;
         cursor: pointer;
     }
-    
+
     /* Adjust font size for .icon2 */
     .icon2 {
         font-size: 24px;
     }
-    
+
     /* Adjust styles for .watch-gallery */
     .watch-gallery {
         display: flex;
@@ -482,32 +502,28 @@ footer {
     .hero h1 {
         font-size: 60px;
     }
-    
+
     /* Adjust font size for .hero .cta-button */
     .hero .cta-button {
         font-size: 18px;
         margin-top: 100px;
     }
-    
+
     /* Adjust styles for .watch-gallery */
     .watch-gallery {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
     }
-    
+
     /* Adjust styles for .watch */
     .watch {
         width: 80%;
         margin: 10px;
     }
-    
+
     /* Adjust styles for .watch img */
     .watch img {
         border-radius: 10px;
     }
 }
-
-
-
-
